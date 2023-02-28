@@ -1,0 +1,56 @@
+.shortList_container {
+    position: relative;
+    width: 30%;
+    height: 330px;
+    left: 30px;
+    background-color:#dfd9d0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.weekTitle_wrap {
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+    margin: 0 auto;
+    }
+.task_wrap {
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #82746b;
+    margin-left: 25px;  
+    font-family: Snell Roundhand, cursive;
+    font-size: 20px;
+}
+.taskTitle {
+    width: 250px;
+}
+.form {
+    position: absolute;
+    margin-left: 65px;
+    bottom: 30px;
+}
+.input {
+    width: 250px;
+    margin-right: 10px;
+    color: #96867b;
+}
+.weekend_right {
+    position: absolute;
+    right: 15px;
+    top: 150px;
+    border: none;
+    color:#96867b;
+    background-color: #82746b00;
+}
+.weekend_left {
+    position: absolute;
+    left: 15px;
+    top: 150px;
+    border: none;
+    color:#96867b;
+    background-color: #82746b00;
+}
+
