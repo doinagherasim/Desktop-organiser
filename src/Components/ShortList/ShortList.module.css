@@ -1,12 +1,13 @@
 .shortList_container {
     position: relative;
-    width: 30%;
+    width: 40%;
     height: 330px;
-    left: 30px;
     background-color:#dfd9d0;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
+    margin: 5px;
+    border: 1px solid green;
 }
 .weekTitle_wrap {
     display: flex;

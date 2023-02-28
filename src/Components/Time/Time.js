@@ -9,8 +9,8 @@ function Time () {
     return (
         <div>
             <div className={classes.time_container}>
-            <h1>13:56:00</h1>
-            <h2>{date}</h2>
+            <h4>13:56:00</h4>
+            <h4>{date}</h4>
             <CalendarApp/>
             </div>
         </div>

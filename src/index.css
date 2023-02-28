@@ -25,6 +25,19 @@ h3 {
 }
 .app-container {
   display: flex;
+  /* justify-content: space-between; */
+}
+.app-container-left {
+  margin: 20px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid red;
+}
+.app-container-right {
+  width: 20%;
+  border: 3px solid yellow;
+  margin: 20px;
 }
 .buttonMid {
   font-family: 'Courier New', monospace;
@@ -43,5 +56,10 @@ h3 {
   font-family: 'Courier New', monospace;
   font-weight: 150;
   color: #356c3d;
+}
+.imgBook {
+  border: 1px solid rebeccapurple;
+  margin: 5px;
+  width: 16.3%;
 }
 
