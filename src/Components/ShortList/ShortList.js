@@ -6,7 +6,14 @@ function ShortList () {
     const [task, setTask] = useState("");
     const [list, setList] =useState([
         {id: 0,
-        title: "sent 20 messages in"},
+        title: "sent 40 messages linkedin",
+        complete: false},
+        {id: 0,
+        title: "sent 20 connections linkedin",
+        complete: false},
+        {id: 0,
+        title: "run at least 5km",
+        complete: false},
     ]);
 
     const deleteHandler = (index) => {
@@ -24,6 +31,15 @@ function ShortList () {
     setList([...list, newTask])
     };
 
+    const [complete, setComplete] = useState([list])
+    const completeTask = (index) => {
+    if(list[index].complete === false) {
+        setComplete(true);
+    } else if (list[index].complete === true) {
+        setComplete(false);
+    }
+    };
+
 
     return (
         <div className={classes.shortList_container}>
@@ -36,8 +52,8 @@ function ShortList () {
                 {
                     list.map((element, index) => 
                     <div key={index} className={classes.task_wrap}>
-                    <li className={classes.taskTitle}>{element.title}</li>
-                    <button className="green-Btn">✓</button>
+                    <li className={`${classes.taskTitle} ${complete ? "" : "line_trough"}`}>{element.title}</li>
+                    <button className="green-Btn" onClick={completeTask}>✓</button>
                     <button onClick={(index)=>{deleteHandler(index)}} className="red-Btn">✕</button>
                  </div>
                  )}
